@@ -2,7 +2,7 @@
 // DATA
 // ══════════════════════════════════════════════════
 let products = [
-  { id: 1, name: 'Sérum Hidratante Intenso', price: 60, cat: 'seca', emoji: '❋', desc: 'Ácido hialurónico + aloe vera para hidratación profunda de 72h.', extraDesc: 'Aplicar 2-3 gotas sobre el rostro limpio. Ideal para uso nocturno.', stock: 45, badge: 'Bestseller', img: 'img/A1.png' },
+  { id: 1, name: 'Sérum Hidratante Intenso', price: 600, cat: 'seca', emoji: '❋', desc: 'Ácido hialurónico + aloe vera para hidratación profunda de 72h.', extraDesc: 'Aplicar 2-3 gotas sobre el rostro limpio. Ideal para uso nocturno.', stock: 45, badge: 'Bestseller', img: 'img/A1.png' },
   { id: 2, name: 'Crema Nutritiva de Argán', price: 165, cat: 'seca', emoji: '❀', desc: 'Aceite de argán puro con manteca de karité para nutrir pieles secas.', extraDesc: 'Rica en vitamina E y ácidos grasos esenciales.', stock: 30, img: 'img/2.png' },
   { id: 3, name: 'Sérum Control Sebo', price: 110, cat: 'grasa', emoji: '❀', desc: 'Niacinamida + zinc para regular el exceso de grasa y minimizar poros.', extraDesc: 'Fórmula ligera de rápida absorción. Libre de aceites.', stock: 60, badge: 'Nuevo', img: 'img/3.png' },
   { id: 4, name: 'Tónico Poros Invisibles', price: 95, cat: 'grasa', emoji: '✦', desc: 'Ácido salicílico natural + té verde para piel fresca y sin brillo.', extraDesc: 'Aplicar con algodón por las mañanas.', stock: 40, img: 'img/4.png' },
