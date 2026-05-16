@@ -2,26 +2,40 @@
 // DATA
 // ══════════════════════════════════════════════════
 let products = [
-  { id: 1, name: 'mascarilla de arcilla verde', price: 10, cat: 'grasa', emoji: '❋', desc: 'Reduce la inflamacion - Quita el brillo de la piel grasa. ', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 45, badge: 'Bestseller', img: 'img/MA1.png' },
-  { id: 2, name: 'Crema Nutritiva de Argán', price: 165, cat: 'seca', emoji: '❀', desc: 'Aceite de argán puro con manteca de karité para nutrir pieles secas.', extraDesc: 'Rica en vitamina E y ácidos grasos esenciales.', stock: 30, img: 'img/2.png' },
-  { id: 3, name: 'Sérum Control Sebo', price: 110, cat: 'grasa', emoji: '❀', desc: 'Niacinamida + zinc para regular el exceso de grasa y minimizar poros.', extraDesc: 'Fórmula ligera de rápida absorción. Libre de aceites.', stock: 60, badge: 'Nuevo', img: 'img/3.png' },
-  { id: 4, name: 'Tónico Poros Invisibles', price: 95, cat: 'grasa', emoji: '✦', desc: 'Ácido salicílico natural + té verde para piel fresca y sin brillo.', extraDesc: 'Aplicar con algodón por las mañanas.', stock: 40, img: 'img/4.png' },
-  { id: 5, name: 'Crema Equilibrante', price: 130, cat: 'mixta', emoji: '◈', desc: 'Fórmula bifásica que hidrata zonas secas y controla la zona T.', extraDesc: 'Para mejores resultados, usar mañana y noche.', stock: 25, img: 'img/5.png' },
-  { id: 6, name: 'Mascarilla Purificante', price: 85, cat: 'mixta', emoji: '❧', desc: 'Arcilla kaolín + carbón activado para limpieza profunda semanal.', extraDesc: 'Aplicar 1-2 veces por semana durante 10 minutos.', stock: 55, img: 'img/6.png' },
-  { id: 7, name: 'Sérum Calmante de Rosa', price: 155, cat: 'sensible', emoji: '✿', desc: 'Rosa mosqueta + centella asiática para pieles reactivas.', extraDesc: 'Sin fragancia, sin colorantes. Dermatológicamente probado.', stock: 20, badge: 'Favorito', img: 'img/7.png' },
+  { id: 1, name: 'Mascarilla de arcilla verde', price: 10, cat: 'grasa', emoji: '❋', desc: 'Reduce la inflamacion - Quita el brillo de la piel grasa. ', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 45, badge: 'Bestseller', img: 'img/MA1.png' },
+  { id: 2, name: 'Mascarilla de arcilla verde', price: 27, cat: 'grasa', emoji: '❀', desc: 'reduce la inflamacion - quita el brillo de la piel grasa.', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 30, img: 'img/MA2.png' },
+  { id: 3, name: 'Mascarilla de arcilla roja', price: 10, cat: 'madura', emoji: '❀', desc: 'Proporciona una mejora en la suavidad y firmesa de la piel del rostro.', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 40, badge: 'Nuevo', img: 'img/MA3.png' },
+  { id: 4, name: 'Mascarilla de arcilla blanca', price: 10, cat: 'sencible', emoji: '✦', desc: 'Elimina las toxina y absobe las celulas muertas de la piel.', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 40, img: 'img/MA5.png' },
+  { id: 5, name: 'Mascarilla de arcilla blanca', price: 27, cat: 'sencible', emoji: '◈', desc: 'Elimina las toxina y absobe las celulas muertas de la piel.', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 40, img: 'img/MA6.png' },
+  { id: 6, name: 'Mascarilla de arcilla rosa', price: 10, cat: 'grasa', emoji: '❧', desc: 'suavisa y da luminocidad a la piel.', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 55, img: 'img/MA7.png' },
+  { id: 7, name: 'Mascarilla de arcilla rosa', price: 27 cat: 'grasa', emoji: '✿', desc: 'suavisa y da luminocidad a la piel.', extraDesc: 'Aplicar una cucharilla de la arcilla con un poco de agua y dejar secar.', stock: 20, badge: '', img: 'img/MA8.png' },
   { id: 8, name: 'Crema Barrera Protectora', price: 140, cat: 'sensible', emoji: '◆', desc: 'Ceramidas + péptidos para reforzar la barrera cutánea natural.', extraDesc: 'Especial para pieles post-tratamiento.', stock: 35, img: 'img/8.png' },
   { id: 9, name: 'Retinol Suave Nocturno', price: 175, cat: 'madura', emoji: '☾', desc: 'Retinol encapsulado 0.3% + vitamina E para regenerar mientras duermes.', extraDesc: 'Usar solo de noche. Aplicar protector solar al día siguiente.', stock: 18, badge: 'Premium', img: 'img/9.png' },
   { id: 10, name: 'Crema Antioxidante Lumière', price: 195, cat: 'madura', emoji: '✦', desc: 'Vitamina C estabilizada + resveratrol para luminosidad y firmeza.', extraDesc: 'Protege contra radicales libres y polución ambiental.', stock: 22, img: 'img/10.png' },
   { id: 11, name: 'Aceite Facial de Jojoba', price: 90, cat: 'todos', emoji: '❀', desc: 'Aceite de jojoba 100% puro, apto para todo tipo de piel.', extraDesc: 'Mezclar con crema habitual o aplicar solo en las noches.', stock: 80, img: 'img/11.png' },
   { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
+  { id: 12, name: 'Protector Solar SPF50', price: 115, cat: 'todos', emoji: '☼', desc: 'Protección mineral con zinc + activos botánicos.', extraDesc: 'No deja residuo blanco. Fórmula invisible y ligera.', stock: 65, img: 'img/12.png' }
 ];
 
 let cart = [], orders = [], quizAnswers = {}, currentStep = 0, heroCarIdx = 0, nosCarIdx = 0;
 let editingProductId = null, editingProductImg = null;
-let waNumber = '+59171234567', qrImageSrc = null;
+let waNumber = '+591 71476150', qrImageSrc = null;
 let deliveryMode = 'tienda'; // 'tienda' | 'delivery' | 'departamento'
 
-let socialLinks = { instagram: '', facebook: '', tiktok: '' };
+let socialLinks = { instagram: 'https://www.instagram.com/madame_natural_?igsh=MWpjemY5eXhya3h4MQ==', facebook: 'https://www.facebook.com/share/1Cu5czimHs/', tiktok: 'https://www.tiktok.com/@madame_natural?_r=1&_t=ZS-96Pba3eOehg' };
 let locationData = { title: 'Encuéntranos', street: 'Av. Ejemplo #123, Cochabamba', hours: 'Lun – Sáb: 9:00 – 20:00', ref: 'A media cuadra del parque principal', mapUrl: '', mapImg: null };
 
 // ══ CAROUSEL DATA ══
